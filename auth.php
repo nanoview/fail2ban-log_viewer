@@ -8,7 +8,7 @@ if(session_status() === PHP_SESSION_NONE){
 // Handle logout
 if(isset($_GET['logout']) && $_GET['logout'] === '1'){
     session_destroy();
-    header('Location: login.php?logged_out=1');
+    header('Location: index.php?logged_out=1');
     exit;
 }
 
